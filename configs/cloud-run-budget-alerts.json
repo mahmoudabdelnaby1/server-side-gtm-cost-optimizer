@@ -1,0 +1,6 @@
+{
+  "cloud_run_max_monthly_budget_usd": 65.0,
+  "max_concurrent_instances": 3,
+  "memory_allocation_per_instance": "512MiB",
+  "cpu_allocation": "1.0"
+}

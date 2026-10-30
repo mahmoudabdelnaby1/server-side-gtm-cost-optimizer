@@ -1,0 +1,27 @@
+{
+  "trigger_name": "Noise Event Exclusion Trigger",
+  "description": "Excludes low-value high-frequency telemetry events from server container ingestion",
+  "rules": [
+    {
+      "variable": "{{Event}}",
+      "operator": "not_equals",
+      "value": "scroll"
+    },
+    {
+      "variable": "{{Event}}",
+      "operator": "not_equals",
+      "value": "video_progress"
+    },
+    {
+      "variable": "{{Event}}",
+      "operator": "not_equals",
+      "value": "engagement_timer"
+    },
+    {
+      "variable": "{{Event}}",
+      "operator": "not_equals",
+      "value": "user_engagement"
+    }
+  ],
+  "estimated_cost_reduction_pct": 35.0
+}
